@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../projeto"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Atividades_1BIM"
+	}
+}
