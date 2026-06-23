@@ -1,0 +1,12 @@
+# Configuração do Netlify
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[dev]
+  publish = "."
+  port = 8888
+
+[functions]
+  node_bundler = "esbuild"

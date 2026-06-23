@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Focusly — o app que organiza suas tarefas e mantém seu foco no que realmente importa." />
+  <title>Focusly — Foco no que importa</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho / menu -->
+  <header class="navbar" id="topo">
+    <div class="container navbar__inner">
+      <a href="#topo" class="navbar__brand">
+        <span class="navbar__logo" aria-hidden="true">◆</span>
+        Focusly
+      </a>
+
+      <nav class="navbar__nav" id="menu" aria-label="Navegação principal">
+        <a href="#recursos">Recursos</a>
+        <a href="#precos">Preços</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn btn--primary btn--sm">Começar grátis</a>
+      </nav>
+
+      <button class="navbar__toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">✦ Novo · Modo foco com IA</span>
+          <h1 class="hero__title">Organize suas tarefas e <span class="text-gradient">mantenha o foco</span> no que importa.</h1>
+          <p class="hero__subtitle">
+            O Focusly reúne suas tarefas, projetos e prazos em um só lugar —
+            simples, rápido e sem distrações.
+          </p>
+          <div class="hero__actions">
+            <a href="#precos" class="btn btn--primary">Ver planos</a>
+            <a href="#recursos" class="btn btn--ghost">Conhecer recursos</a>
+          </div>
+          <p class="hero__note">Sem cartão de crédito · Cancele quando quiser</p>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="mockup">
+            <div class="mockup__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__task mockup__task--done">Finalizar relatório</div>
+              <div class="mockup__task">Reunião com o time · 14h</div>
+              <div class="mockup__task">Revisar landing page</div>
+              <div class="mockup__task mockup__task--accent">Estudar para a prova</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos -->
+    <section class="features" id="recursos">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Recursos</span>
+          <h2 class="section-title">Tudo que você precisa para produzir mais</h2>
+          <p class="section-subtitle">Ferramentas pensadas para tirar o caos da sua rotina.</p>
+        </div>
+
+        <div class="features__grid">
+          <article class="feature-card">
+            <div class="feature-card__icon">✓</div>
+            <h3>Tarefas inteligentes</h3>
+            <p>Organize por prioridade, prazo e projeto. O Focusly sugere o que fazer primeiro.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">⏱</div>
+            <h3>Modo foco</h3>
+            <p>Bloqueie distrações com sessões cronometradas no estilo Pomodoro.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">📊</div>
+            <h3>Relatórios</h3>
+            <p>Acompanhe seu progresso com gráficos claros e fáceis de entender.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">👥</div>
+            <h3>Colaboração</h3>
+            <p>Compartilhe projetos com seu time e acompanhe tudo em tempo real.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preços -->
+    <section class="pricing" id="precos">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Preços</span>
+          <h2 class="section-title">Planos para cada momento</h2>
+          <p class="section-subtitle">Comece de graça e evolua quando precisar.</p>
+        </div>
+
+        <div class="pricing__grid">
+          <!-- Plano Free -->
+          <article class="price-card">
+            <h3 class="price-card__name">Free</h3>
+            <p class="price-card__price"><span class="price-card__currency">R$</span>0<span class="price-card__period">/mês</span></p>
+            <p class="price-card__desc">Para começar a se organizar.</p>
+            <ul class="price-card__list">
+              <li>Até 3 projetos</li>
+              <li>Tarefas ilimitadas</li>
+              <li>Modo foco básico</li>
+              <li class="is-off">Relatórios avançados</li>
+              <li class="is-off">Colaboração em time</li>
+            </ul>
+            <a href="#contato" class="btn btn--ghost btn--block">Começar grátis</a>
+          </article>
+
+          <!-- Plano Pro (destaque) -->
+          <article class="price-card price-card--featured">
+            <span class="price-card__tag">Mais popular</span>
+            <h3 class="price-card__name">Pro</h3>
+            <p class="price-card__price"><span class="price-card__currency">R$</span>29<span class="price-card__period">/mês</span></p>
+            <p class="price-card__desc">Para quem leva produtividade a sério.</p>
+            <ul class="price-card__list">
+              <li>Projetos ilimitados</li>
+              <li>Tarefas ilimitadas</li>
+              <li>Modo foco com IA</li>
+              <li>Relatórios avançados</li>
+              <li class="is-off">Colaboração em time</li>
+            </ul>
+            <a href="#contato" class="btn btn--primary btn--block">Assinar o Pro</a>
+          </article>
+
+          <!-- Plano Team -->
+          <article class="price-card">
+            <h3 class="price-card__name">Team</h3>
+            <p class="price-card__price"><span class="price-card__currency">R$</span>79<span class="price-card__period">/mês</span></p>
+            <p class="price-card__desc">Para times que crescem juntos.</p>
+            <ul class="price-card__list">
+              <li>Tudo do plano Pro</li>
+              <li>Até 10 membros</li>
+              <li>Colaboração em tempo real</li>
+              <li>Permissões por projeto</li>
+              <li>Suporte prioritário</li>
+            </ul>
+            <a href="#contato" class="btn btn--ghost btn--block">Falar com vendas</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contato">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <span class="eyebrow">Contato</span>
+          <h2 class="section-title">Vamos conversar</h2>
+          <p class="section-subtitle">
+            Tem dúvidas sobre os planos ou quer uma demonstração?
+            Envie uma mensagem e respondemos em até 24h.
+          </p>
+          <ul class="contact__list">
+            <li><strong>E-mail:</strong> contato@focusly.app</li>
+            <li><strong>Telefone:</strong> (45) 99999-0000</li>
+            <li><strong>Endereço:</strong> Cascavel, PR — Brasil</li>
+          </ul>
+        </div>
+
+        <form class="contact__form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" id="submit-btn">Enviar mensagem</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#topo" class="navbar__brand">
+          <span class="navbar__logo" aria-hidden="true">◆</span>
+          Focusly
+        </a>
+        <p>Foco no que importa. Sua produtividade em um só lugar.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Produto">
+        <h4>Produto</h4>
+        <a href="#recursos">Recursos</a>
+        <a href="#precos">Preços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Empresa">
+        <h4>Empresa</h4>
+        <a href="#">Sobre</a>
+        <a href="#">Blog</a>
+        <a href="#">Carreiras</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Redes sociais">
+        <h4>Redes</h4>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">X / Twitter</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
